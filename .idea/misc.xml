@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CookAndroid/Project/WebSocketExer/app/src/main/res/layout/activity_camera.xml" value="0.128125" />
+        <entry key="..\:/CookAndroid/Project/WebSocketExer/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/CookAndroid/Project/WebSocketExer/app/src/main/res/layout/activity_main2.xml" value="0.264" />
+        <entry key="..\:/CookAndroid/Project/WebSocketExer/app/src/main/res/layout/activity_main3.xml" value="0.12916666666666668" />
+        <entry key="..\:/CookAndroid/Project/WebSocketExer/app/src/main/res/layout/activity_real_time.xml" value="0.128125" />
+        <entry key="..\:/CookAndroid/Project/WebSocketExer/app/src/main/res/layout/activity_theft.xml" value="0.14895833333333333" />
+        <entry key="..\:/CookAndroid/Project/WebSocketExer/app/src/main/res/layout/fragment_page_one.xml" value="0.239067055393586" />
+        <entry key="..\:/CookAndroid/Project/WebSocketExer/app/src/main/res/layout/fragment_page_three.xml" value="0.4" />
+        <entry key="..\:/CookAndroid/Project/WebSocketExer/app/src/main/res/layout/fragment_page_two.xml" value="0.12916666666666668" />
+        <entry key="..\:/CookAndroid/Project/WebSocketExer/app/src/main/res/layout/recycler_item.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
