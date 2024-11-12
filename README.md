@@ -1,5 +1,5 @@
-## 무인매장 솔루션 관리자용 어플리케이션
-무인매장 관리자를 위한 어플리케이션입니다.
+# 무인매장 솔루션 관리자용 어플리케이션
+> 무인매장 관리자를 위한 어플리케이션입니다.
 
 ## :smiley: 개발자 
 <table>
@@ -44,11 +44,20 @@
 ## Hard Things 
 
 #### 실시간 도난의심상황 실시간 UI 반영 && 실시간 도난의심상황 알림 (안드로이드 스튜디오 생명주기와 상관없이)
-
-
 <img src="https://github.com/DuksungElectronics/Android_Admin/assets/75514808/6ff72fbc-628c-4d7d-932c-8babb5c72a86"  width="800" />
 <img src="https://github.com/DuksungElectronics/Android_Admin/assets/75514808/29cceabd-43d1-4f5a-84f9-bdc1336d70d8"  width="800" />
 <img src="https://github.com/DuksungElectronics/Android_Admin/assets/75514808/38b49260-e932-44e3-aa9e-53b25a4046fc"  width="800" />
+
+
+> Android Studio의 컴포넌트인 `Fragment`와 `Activity`의 차이점을 정확히 이해하고 사용자 친화적인 ui를 포기하지 않고 복잡한 과정이지만 이해하고 구현하였습니다.
+
+→ 사용자에게 한 눈에 들어오는 UI를 제시하기 위해 `Activity` 내에 여러 `Fragment`를 배치하는 방식으로 탭메뉴를 구성하였습니다.
+
+→ 하지만 `Fragmemt`는 `Activity`의 생명주기에 의존하기 때문에 실시간 데이터를 표시하기 위해 `Service`컴포넌트를 만들어 실시간으로 데이터를 수렴하게 구현하였습니다.
+
+→ `foregroundService`의 `startForeground()` 메서드로 백그라운드에서도 계속 실행될 수 있도록 설정되기 때문에, `ForegroundService`는 시스템에 의해 종료되거나 명시적으로 `stopSelf()`가 호출될 때까지 종료되지 않도록 동작하게끔 하여, 어플이 종료되더라도, `foregroundSerivice` 는 종료되지 않아 실시간 연결이 유지되며, 도난의심상황이 발생하였을때 실시간으로 알림을 발생시킵니다. 
+
+→ `fragment`로 보내 표시하기 위해, `Service`에서 서버와 통신해서 받은 데이터를 `Broadcast Receiver`를 통해 받아 실시간으로 UI를 재정의합니다.
 
 
 
